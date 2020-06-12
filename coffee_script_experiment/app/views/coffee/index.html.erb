@@ -1,0 +1,13 @@
+<div id="form-div">
+  <%= form_with url: coffee_ajax_path, method: :post do |f| %>
+    <div>
+      This form will create an ajax post request to <b>coffee#ajax</b>
+      and will create a new user. Along with updating the page with the
+      new user.
+    </div>
+    <hr />
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.submit "Create User" %>
+  <% end %>
+<div>
